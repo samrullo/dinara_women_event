@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% load custom_filters %}
+
+{% block content %}
+<h1>{{title}}</h1>
+<a href="{% url new_view %}" class="btn btn-primary">New</a>
+
+<table class="table table-hover orderByDateTable">
+  <thead order_col_no="0">
+    <tr>
+      {% for col in columns %}
+        <th scope="col">{{ col }}</th>
+      {% endfor %}
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for record in data %}
+      <tr>
+        <td>{{ record.id }}</td>
+        <td>{{ record.responder }}</td>
+        <td>
+          {% for topic in record.seminar_topic.all %}
+            {{ topic.description }}{% if not forloop.last %}, {% endif %}
+          {% endfor %}
+        </td>
+        <td>{{ record.seminar_topic_other }}</td>
+        <td>
+          {% for style in record.interactive_style.all %}
+            {{ style.description }}{% if not forloop.last %}, {% endif %}
+          {% endfor %}
+        </td>
+        <td>{{ record.comments }}</td>
+        <td><a href="{% url edit_view record.id %}" class="btn btn-dark">Edit</a></td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

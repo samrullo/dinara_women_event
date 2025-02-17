@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% load custom_filters %}
+
+{% block content %}
+<h1>{{title}}</h1>
+<a href="{% url new_view %}" class="btn btn-primary">New</a>
+
+<table class="table table-hover orderByDateTable">
+  <thead order_col_no="0">
+    <tr>
+      {% for col in columns %}
+        <th scope="col">{{ col }}</th>
+      {% endfor %}
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for record in data %}
+      <tr>
+        <td>{{ record.id }}</td>
+        <td>{{ record.name }}</td>
+        <td>{{ record.age }}</td>
+        <td>{{ record.years_in_japan }}</td>
+        <td>{{ record.living_city }}</td>
+        <td>{{ record.education }}</td>
+        <td>{{ record.education_details }}</td>
+        <td>{% if record.does_work %}Ha{% else %}Yo'q{% endif %}</td>
+        <td>{{ record.workplace }}</td>
+        <td><a href="{% url edit_view record.id %}" class="btn btn-dark">Edit</a></td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

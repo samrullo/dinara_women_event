@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2 class="mb-4">Manage Data</h2>
+
+<!-- ✅ Responder Section -->
+<h4>Responders</h4>
+<div class="list-group mb-3">
+    <a href="{% url 'create_responder' %}" class="list-group-item list-group-item-action">New Responder</a>
+    <a href="{% url 'responders' %}" class="list-group-item list-group-item-action">View Responders</a>
+</div>
+
+<!-- ✅ Question Two Section -->
+<h4>Question Two</h4>
+<div class="list-group mb-3">
+    <a href="{% url 'create_question_two' %}" class="list-group-item list-group-item-action">New Question Two</a>
+    <a href="{% url 'question_twos' %}" class="list-group-item list-group-item-action">View Question Twos</a>
+</div>
+
+<!-- ✅ Question Three Section -->
+<h4>Question Three</h4>
+<div class="list-group mb-3">
+    <a href="{% url 'create_question_three' %}" class="list-group-item list-group-item-action">New Question Three</a>
+    <a href="{% url 'question_threes' %}" class="list-group-item list-group-item-action">View Question Threes</a>
+</div>
+
+<!-- ✅ Question Four Section -->
+<h4>Question Four</h4>
+<div class="list-group mb-3">
+    <a href="{% url 'create_question_four' %}" class="list-group-item list-group-item-action">New Question Four</a>
+    <a href="{% url 'question_fours' %}" class="list-group-item list-group-item-action">View Question Fours</a>
+</div>
+
+<!-- ✅ Language Section -->
+<h4>Languages</h4>
+<div class="list-group mb-3">
+    <a href="{% url 'create_language' %}" class="list-group-item list-group-item-action">New Language</a>
+    <a href="{% url 'languages' %}" class="list-group-item list-group-item-action">View Languages</a>
+</div>
+
+<!-- ✅ Education Section -->
+<h4>Education</h4>
+<div class="list-group mb-3">
+    <a href="{% url 'create_education' %}" class="list-group-item list-group-item-action">New Education</a>
+    <a href="{% url 'educations' %}" class="list-group-item list-group-item-action">View Educations</a>
+</div>
+
+
+<!-- ✅ Difficulties in Japan Section -->
+<h4>Difficulties in Japan</h4>
+<div class="list-group mb-3">
+    <a href="{% url 'create_difficulty' %}" class="list-group-item list-group-item-action">New Difficulty</a>
+    <a href="{% url 'difficulties' %}" class="list-group-item list-group-item-action">View Difficulties</a>
+</div>
+
+<!-- ✅ Seminar Topics Section -->
+<h4>Seminar Topics</h4>
+<div class="list-group mb-3">
+    <a href="{% url 'create_seminar_topic' %}" class="list-group-item list-group-item-action">New Seminar Topic</a>
+    <a href="{% url 'seminar_topics' %}" class="list-group-item list-group-item-action">View Seminar Topics</a>
+</div>
+
+<!-- ✅ Interactive Styles Section -->
+<h4>Interactive Styles</h4>
+<div class="list-group mb-3">
+    <a href="{% url 'create_interactive_style' %}" class="list-group-item list-group-item-action">New Interactive
+        Style</a>
+    <a href="{% url 'interactive_styles' %}" class="list-group-item list-group-item-action">View Interactive Styles</a>
+</div>
+
+<!-- ✅ How You Found Us Section -->
+<h4>How You Found Us</h4>
+<div class="list-group mb-3">
+    <a href="{% url 'create_how_you_found_us' %}" class="list-group-item list-group-item-action">New How You Found
+        Us</a>
+    <a href="{% url 'how_you_found_us' %}" class="list-group-item list-group-item-action">View How You Found Us</a>
+</div>
+
+<!-- ✅ Use Uzbek Community Help Section -->
+<h4>Use Uzbek Community Help</h4>
+<div class="list-group mb-3">
+    <a href="{% url 'create_use_uzbek_community_help' %}" class="list-group-item list-group-item-action">New Use Uzbek
+        Community Help</a>
+    <a href="{% url 'use_uzbek_community_help' %}" class="list-group-item list-group-item-action">View Use Uzbek
+        Community Help</a>
+</div>
+
+
+<!-- ✅ Statistics -->
+<h4>Statistics</h4>
+<div class="list-group mb-3">
+    <a href="{% url 'difficulties_in_japan' %}" class="list-group-item list-group-item-action">Yaponiyaga ko'chib kelganda qiyinchiliklar</a>
+    <a href="{% url 'does_work_stats' %}" class="list-group-item list-group-item-action">Ishlayman/Ishlamayman soni</a>
+    <a href="{% url 'seminar_topics_stats' %}" class="list-group-item list-group-item-action">Seminar mavzusi statistikasi</a>
+    <a href="{% url 'interactive_stye_stats' %}" class="list-group-item list-group-item-action">Interaktiv shakl statistikasi</a>
+    <a href="{% url 'howyoufoundus_stats' %}" class="list-group-item list-group-item-action">Bizni qanday topdiz statistikasi</a>
+    <a href="{% url 'languages_stats' %}" class="list-group-item list-group-item-action">Til bilish statistikasi</a>
+    <a href="{% url 'education_stats' %}" class="list-group-item list-group-item-action">Ta'lim statistikasi</a>
+
+</div>
+
+
+{% endblock %}

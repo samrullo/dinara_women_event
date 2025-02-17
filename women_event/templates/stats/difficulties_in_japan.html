@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% load custom_filters %}
+{% block content %}
+<h1>{{title}}</h1>
+
+<table class="table table-hover orderByDateTable">
+    <thead order_col_no="0">
+
+    <th scope="col">Qiyinchilik</th>
+    <th scope="col">Soni</th>
+
+    </thead>
+    <tbody>
+    {% for difficulty,thecount in difficulties_count %}
+    <tr>
+        <td>{{ difficulty }}</td>
+        <td>{{ thecount }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% load custom_filters %}
+{% block content %}
+<h1>{{title}}</h1>
+
+<table class="table table-hover orderByDateTable">
+    <thead order_col_no="0">
+
+    <th scope="col">Ishlayman javobi</th>
+    <th scope="col">Soni</th>
+    </thead>
+    <tbody>
+    {% for does_work,thecount in data %}
+    <tr>
+        <td>{{ does_work }}</td>
+        <td>{{ thecount }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

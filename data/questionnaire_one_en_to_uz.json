@@ -1,0 +1,10 @@
+{
+  "name": "Ism va Familiyangiz",
+  "age": "Necha Yoshdasiz?",
+  "languages": "Qaysi tillarni bilasiz?",
+  "years_in_japan": "Yaponiyada nechi yildan beri yashaysiz?",
+  "living_city": "Yaponiyadagi yashash shahri",
+  "education": "Ta'lim darajangiz",
+  "does_work": "Ishlayman",
+  "workplace": "Yaponiyadagi ish joyingiz"
+}

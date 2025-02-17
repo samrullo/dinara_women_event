@@ -1,0 +1,87 @@
+.price {
+  font-size: 2rem;
+  color: purple;
+}
+
+.inflow{
+  font-size:1.5rem;
+  color:blue;
+}
+
+.outflow{
+  font-size:1.5rem;
+  color:red;
+}
+
+.pagination-page-info {
+  padding: .6em;
+  padding-left: 0;
+  width: 40em;
+  margin: .5em;
+  margin-left: 0;
+  font-size: 12px;
+}
+
+.pagination-page-info b {
+  color: black;
+  background: #6aa6ed;
+  padding-left: 2px;
+  padding: .1em .25em;
+  font-size: 150%;
+}
+
+h2 {
+  margin: 0.5rem auto;
+}
+
+.positive-numeric {
+  text-align: right;
+  color: black;
+}
+
+.negative-numeric {
+  text-align: right;
+  color: red;
+}
+
+.list-group {
+  padding: 1rem 0;
+}
+
+.table {
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.is_paid {
+  background-color: #32ff6a;
+}
+
+.is_received {
+  background-color: #32ff6a;
+}
+
+.add_jspanda_order {
+  padding: 1rem 0;
+}
+
+
+/* table search field */
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.saitama_liability{
+  background-color: #50d890;
+}
+
+.mitsubishi_liability{
+  background-color:#e7a4e4;
+}
